@@ -1,0 +1,117 @@
+/*Reset*/
+*{
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*Variaveis*/
+.shrek:root{
+    --back:#2646077a;
+    --borda: #00ff15;
+    --seta:#77e478;
+    --h3: #63f063;
+    --p: #7fc57f;
+    --a: #afe224;
+}
+.fiona:root{
+    --back:#cc941b7a;
+    --borda: #eeff00;
+    --seta:#e9c80b;
+    --h3: #695705;
+    --p: #ffe605;
+    --a: #5a550a;
+}
+.burro:root{
+    --back:#7a78777a;
+    --borda: #000000;
+    --seta:#69635f;
+    --h3: #c9c7c4;
+    --p: #221f1b;
+    --a: #252525;
+}
+.gato:root{
+    --back:#6e411b7a;
+    --borda: #ff7b00;
+    --seta:#e9640b;
+    --h3: #ff7b00;
+    --p: #db822f;
+    --a: #502305;
+}
+
+/*Code*/
+body{
+    overflow: hidden hidden;
+}
+#setas{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+}
+#setas *{
+    margin: 20px;
+}
+#setas i{
+    color: var(--seta);
+    cursor:pointer;
+}
+#setas #setaEsquerda{
+    transform: rotate(180deg);
+}
+body section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+}
+section#shrek{
+    background: url('img/shrek.jpg') center center no-repeat;
+    background-size: cover;
+}
+section#fiona{
+    background: url('img/fiona.jpg') center center no-repeat;
+    background-size: cover;
+}
+section#burro{
+    background: url('img/burro.jpg') center center no-repeat;
+    background-size: cover;
+}section#gato{
+    background: url('img/gato.jpg') center center no-repeat;
+    background-size: cover;
+}
+body section main{
+    width: 30%;
+    padding: 20px;
+    border: 2px solid var(--borda);
+    border-radius: 20px;
+    margin-left:60px;
+    background-color: var(--back);
+}
+body section main h2{
+    font-size: 50px;
+    color: var(--h3);
+}
+body section main p{
+    font-size: 30px;
+    text-align: justify;
+    color: var(--p);
+}
+body section main a{
+    font-size: 40px;
+    color: var(--a);
+    text-decoration:underline;
+}
+body div section{
+    display: none;
+}
+.mostra{
+    display: flex;
+}
